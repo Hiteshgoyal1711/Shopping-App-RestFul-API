@@ -47,7 +47,7 @@ RESTful API for shopping where you can add/delete your product and order any pro
 | ------------- |:-------------:|----------------------------|
 | [`GET/users/`](#a-get-list-of-all-users)    |Get list of all users| Admin | 
 | [`DELETE/user/`](#b-delete-a-user)     | Delete a user | Admin | 
-| [`GET/users/me`](#c-get-details-of-a-loggedin-user)| Get details of a user which is logged in. | User + Admin | 
+| [`GET/users/me`](#c-get-details-of-a-loggedin-user)| Get details of a user which is logged in. | User | 
 | [`GET/users/:userId`](#d-get-details-of-a-specific-user)| Get details of a user. | Admin |
 | [`PUT/api/v1/me/update`](#e-update-loggedin-user-details) | Update a logged in user details| User |
 | [`PUT/api/v1/password/update`](#f-update-password-loggedin-user) |Update password for loggedin user| User |
