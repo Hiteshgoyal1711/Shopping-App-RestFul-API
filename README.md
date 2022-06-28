@@ -51,4 +51,6 @@ RESTful API for shopping where you can add/delete your product and order any pro
 | [`GET/users/:userId`](#d-get-details-of-a-specific-user)| Get details of a user. | Admin |
 | [`PUT/api/v1/me/update`](#e-update-loggedin-user-details) | Update a logged in user details| User |
 | [`PUT/api/v1/password/update`](#f-update-password-loggedin-user) |Update password for loggedin user| User |
+| [`PUT/api/v1/admin/users/:userId`](#g-update-user-role-to-admin) |Update User Role to admin| Admin |
+
 
