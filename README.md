@@ -32,7 +32,7 @@ RESTful API for shopping where you can add/delete your product and order any pro
 ## Available API Routes
 ### [Products Routes](#1-product-routes) 
 | Routes        | Description           |Accessability       |
-| ------------- |:-------------:|---------------------|
+| ------------- |:-------------:|----------------------------|
 | [`GET/products/`](#a-get-list-of-all-products)    |Get list of all products| User + Admin | 
 | [`POST/products/`](#b-post-a-new-product)     | Post a new product| Admin | 
 | [`GET/products/:productId`](#c-get-details-of-a-particular-product)| Get details of a particular product. | User + Admin | 
