@@ -28,6 +28,13 @@ RESTful API for shopping where you can add/delete your product and order any pro
     will start a server !
     
     App should now be running on **localhost:3000**
+    
+### Dependencies 
+ - For dependencies refer Package.json
+
+
+### For Testing (Postman)
+- Postman extension can be used for testing !
 
 ## Available API Routes
 
@@ -52,6 +59,32 @@ RESTful API for shopping where you can add/delete your product and order any pro
 | [`GET/users/me`](#e-get-details-of-a-loggedin-user)| Get details of a user which is logged in. | User | 
 | [`PUT/api/v1/me/update`](#f-update-loggedin-user-details) | Update a logged in user details| User |
 | [`PUT/api/v1/password/update`](#g-update-password-loggedin-user) |Update password for logged in user| User |
+
+
+
+### [Order Routes](#3-order-routes)
+| Routes        | Description           |Accessability       |
+| ------------- |:-------------:|----------------------------|
+| [`GET/api/v1/orders/me`](#a-get-list-of-all-orders)    | Get all orders by the logged in user | User + Admin |
+| [`POST/api/v1/order/new`](#b-post-a-new-order)     | Post a new order for the logged in user | User + Admin |
+| [`GET/api/v1/order/:orderId`](#c-get-details-of-a-particular-order-for-loggedin-user)| Fetch details of a particular order of loggedin user| User + Admin |
+| [`DELETE/api/v1/admin/order/:orderId`](#d-delete-a-particular-order) | Deletes a particular order | Admin |
+| [`PUT/api/v1/admin/order/:orderId`](#e-update-a-particular-order-status) | Updates a particular order Status| Admin |
+| [`GET/api/v1/admin/orders`](#f-get-list-of-all-orders-by-all-users)    | Get all orders by all users | Admin |
+
+
+
+### [Authentication Routes](#4-authentication-routes)
+| Routes        | Description           |Accessability       |
+| ------------- |:-------------:|----------------------------|
+| [`PUT/api/v1/register`](#a-register-a-new-user)    | Register a New User | User |
+| [`POST/api/v1/login`](#b-Login-a-user)     | Login a User | User |
+| [`POST/api/v1/logout`](#c-logout-a-user)| Logout a User | User |
+| [`POST/api/v1/password/forgot`](#d-sends-an-email-with-reset-link) | Sends An Email with Reset Link | User |
+| [`PUT/api/v1/password/reset/:resetId`](#e-update-password-for-a-user) | Updates user password| User |
+
+
+
 
 
 
