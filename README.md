@@ -41,19 +41,19 @@ RESTful API for shopping where you can add/delete your product and order any pro
 ### [Products Routes](#1-product-routes) 
 | Routes        | Description           |Accessability       |
 | ------------- |:-------------:|----------------------------|
-| [`GET/products/`](#a-get-list-of-all-products)    |Get list of all products| User | 
-| [`POST/products/`](#b-post-a-new-product)     | Post a new product| Admin | 
-| [`GET/products/:productId`](#c-get-details-of-a-particular-product)| Get details of a particular product. | User | 
-| [`PUT/products/:productId`](#d-update-a-particular-product) | Update a particular product| Admin |
-| [`DELETE/products/:productId`](#e-delete-a-particular-product) |Delete a particular product| Admin |
+| [`GET/api/v1/products/`](#a-get-list-of-all-products)    |Get list of all products| User | 
+| [`POST/api/v1/admin/product/new`](#b-post-a-new-product)     | Post a new product| Admin | 
+| [`GET/api/v1/products/:productId`](#c-get-details-of-a-particular-product)| Get details of a particular product. | User | 
+| [`PUT/api/v1/admin/products/:productId`](#d-update-a-particular-product) | Update a particular product| Admin |
+| [`DELETE/api/v1/admin/products/:productId`](#e-delete-a-particular-product) |Delete a particular product| Admin |
 
 
 
 ### [User Routes](#2-user-routes) 
 | Routes        | Description           |Accessability       |
 | ------------- |:-------------:|----------------------------|
-| [`GET/users/`](#a-get-list-of-all-users)    |Get list of all users| Admin | 
-| [`DELETE/user/`](#b-delete-a-user)     | Delete a user | Admin | 
+| [`GET/api/v1/admin/users`](#a-get-list-of-all-users)    |Get list of all users| Admin | 
+| [`DELETE/api/v1/admin/users/:userId`](#b-delete-a-user)     | Delete a user | Admin | 
 | [`GET/users/:userId`](#c-get-details-of-a-specific-user)| Get details of a user. | Admin |
 | [`PUT/api/v1/admin/users/:userId`](#d-update-user-role-to-admin) |Update User Role to admin| Admin |
 | [`GET/users/me`](#e-get-details-of-a-loggedin-user)| Get details of a user which is logged in. | User | 
