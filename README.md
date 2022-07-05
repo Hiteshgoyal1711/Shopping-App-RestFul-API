@@ -41,9 +41,9 @@ RESTful API for shopping where you can add/delete your product and order any pro
 ### [Products Routes](#1-product-routes) 
 | Routes        | Description           |Accessability       |
 | ------------- |:-------------:|----------------------------|
-| [`GET/products/`](#a-get-list-of-all-products)    |Get list of all products| User + Admin | 
+| [`GET/products/`](#a-get-list-of-all-products)    |Get list of all products| User | 
 | [`POST/products/`](#b-post-a-new-product)     | Post a new product| Admin | 
-| [`GET/products/:productId`](#c-get-details-of-a-particular-product)| Get details of a particular product. | User + Admin | 
+| [`GET/products/:productId`](#c-get-details-of-a-particular-product)| Get details of a particular product. | User | 
 | [`PUT/products/:productId`](#d-update-a-particular-product) | Update a particular product| Admin |
 | [`DELETE/products/:productId`](#e-delete-a-particular-product) |Delete a particular product| Admin |
 
@@ -65,9 +65,9 @@ RESTful API for shopping where you can add/delete your product and order any pro
 ### [Order Routes](#3-order-routes)
 | Routes        | Description           |Accessability       |
 | ------------- |:-------------:|----------------------------|
-| [`GET/api/v1/orders/me`](#a-get-list-of-all-orders)    | Get all orders by the logged in user | User + Admin |
-| [`POST/api/v1/order/new`](#b-post-a-new-order)     | Post a new order for the logged in user | User + Admin |
-| [`GET/api/v1/order/:orderId`](#c-get-details-of-a-particular-order-for-loggedin-user)| Fetch details of a particular order of loggedin user| User + Admin |
+| [`GET/api/v1/orders/me`](#a-get-list-of-all-orders)    | Get all orders by the logged in user | User |
+| [`POST/api/v1/order/new`](#b-post-a-new-order)     | Post a new order for the logged in user | User |
+| [`GET/api/v1/order/:orderId`](#c-get-details-of-a-particular-order-for-loggedin-user)| Fetch details of a particular order of loggedin user| User |
 | [`DELETE/api/v1/admin/order/:orderId`](#d-delete-a-particular-order) | Deletes a particular order | Admin |
 | [`PUT/api/v1/admin/order/:orderId`](#e-update-a-particular-order-status) | Updates a particular order Status| Admin |
 | [`GET/api/v1/admin/orders`](#f-get-list-of-all-orders-by-all-users)    | Get all orders by all users | Admin |
